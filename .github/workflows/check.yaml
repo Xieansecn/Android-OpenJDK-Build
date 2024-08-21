@@ -1,0 +1,13 @@
+on:
+  push:
+      branches:
+      - Build_JRE_21
+
+jobs:
+  my_job:
+    name: run check
+    runs-on: ubuntu-22.04
+
+    job:
+    - name: Checkout
+        uses :actions/checkout@v4.1.7
